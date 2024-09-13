@@ -13,7 +13,7 @@ import java.util.concurrent.Callable;
     mixinStandardHelpOptions = true,
     header = "List Command",
     description = "List all expension",
-    footerHeading = "@Copyright",
+    footerHeading = "@Copyright\n",
     footer = "Developed by Kuku107"
 )
 public class ListCommand implements Callable<Integer> {

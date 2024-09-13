@@ -15,7 +15,7 @@ import java.util.concurrent.Callable;
         header = "Delete command",
         description = "Delete an expense, The default is delete all expension",
         requiredOptionMarker = '*',
-        footerHeading = "@Copyright",
+        footerHeading = "@Copyright\n",
         footer = "Developed by Kuku107"
 )
 public class DeleteCommand implements Callable<Integer> {

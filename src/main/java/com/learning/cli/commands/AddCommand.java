@@ -17,7 +17,7 @@ import java.util.concurrent.Callable;
         header = "Add Command",
         description = "Add an expensing you've make",
         mixinStandardHelpOptions = true,
-        footerHeading = "@Copyright",
+        footerHeading = "@Copyright\n",
         requiredOptionMarker = '*',
         footer = "Developed by Kuku107"
 )

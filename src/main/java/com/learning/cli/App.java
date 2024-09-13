@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
         int exitCode = new CommandLine(new RootCommand())
-                .execute("list");
+                .execute("update", "--id=2", "-a=90");
         System.exit(exitCode);
     }
 }
