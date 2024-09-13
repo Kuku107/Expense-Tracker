@@ -10,8 +10,9 @@ import java.util.concurrent.Callable;
     mixinStandardHelpOptions = true,
     subcommands = {
         AddCommand.class,
-        DeleteCommand.class
-
+        DeleteCommand.class,
+        ListCommand.class,
+        SummaryCommand.class
     }
 )
 public class RootCommand implements Callable<Integer> {
