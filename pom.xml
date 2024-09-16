@@ -8,7 +8,7 @@
   <packaging>jar</packaging>
 
   <name>ExpenseTracker</name>
-  <url>http://maven.apache.org</url>
+  <url>https://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,6 +33,12 @@
       <artifactId>picocli</artifactId>
       <version>4.7.6</version>
     </dependency>
+
+      <dependency>
+          <groupId>com.opencsv</groupId>
+          <artifactId>opencsv</artifactId>
+          <version>5.9</version>
+      </dependency>
   </dependencies>
     <build>
         <plugins>

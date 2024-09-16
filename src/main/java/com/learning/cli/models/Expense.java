@@ -1,12 +1,28 @@
 package com.learning.cli.models;
 
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+import com.opencsv.bean.CsvDate;
+
 import java.sql.Date;
 
 public class Expense {
+    @CsvBindByName(column = "ID")
+//    @CsvBindByPosition(position = 0)
     private int id;
+
+    @CsvBindByName(column = "DATE")
+//    @CsvBindByPosition(position = 1)
+    @CsvDate("dd/MM/yyyy")
     private Date date;
+
+    @CsvBindByName(column = "DESCRIPTION")
+//    @CsvBindByPosition(position = 3)
     private String description;
+
+    @CsvBindByName(column = "AMOUNT")
+//    @CsvBindByPosition(position = 2)
     private double amount;
 
     public Expense(int id, Date date, String description, double amount) {
